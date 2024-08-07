@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baking-My-favourite-hobby</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+        margin-bottom: 50px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 1.5;
+      }
+      body {
+        /* background: #bca9f3;*/
+        background: linear-gradient(
+          106.5deg,
+          rgba(255, 215, 185, 0.91) 23%,
+          rgba(223, 159, 247, 0.8) 93%
+        );
+      }
+      img {
+        width: 100%;
+        border-radius: 24px;
+      }
+      a {
+        color: #0000ff;
+        font-size: large;
+      }
+      a:hover {
+        color: #c415b5;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        background: #1f1fcc;
+        border: none;
+        border-radius: 10px;
+        color: #f9f8fc;
+        font-size: 18px;
+        font-family: sans-serif;
+        padding: 15px;
+      }
+      button:hover {
+        cursor: pointer;
+        background: #856f83;
+        color: #ebebf3;
+      }
+      footer {
+        display: block;
+        text-align: center;
+        font-size: medium;
+        font-family: sans-serif;
+      }
+      .container {
+        max-width: 500px;
+        padding: 20px;
+        border-radius: 15px;
+        margin: 20px auto;
+        background: rgb(242, 242, 250);
+      }
+      .dark-button {
+        display: block;
+        margin: 0 auto;
+        padding: 10px;
+        background: #000000;
+        border-radius: 12px;
+        border: none;
+        color: #fff;
+        font-size: 18px;
+        font-family: sans-serif;
+        transition: all 200ms ease-in-out;
+      }
+      .dark-button:hover {
+        background: #fff;
+        color: #000000;
+        cursor: pointer;
+      }
+      .me {
+        text-decoration: none;
+      }
+      .intro-pics {
+        transition: all 150ms ease-in-out;
+        border-radius: 30px;
+      }
+      .intro-pics:hover {
+        filter: contrast(55%);
+        transform: scale(1.15);
+      }
+      .grid {
+        display: grid;
+        margin: 15px 0;
+        grid-gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+      .grid img {
+        width: 100%;
+        border-radius: 20px;
+        transition: all 150ms ease-in-out;
+      }
+      .grid img:hover {
+        transform: scale(2);
+      }
+      .cake {
+        height: 165px;
+      }
+      .cookeis {
+        height: 165px;
+      }
+      .dark {
+        /*background: #000000;*/
+
+        background: linear-gradient(
+          109.6deg,
+          rgb(36, 45, 57) 11.2%,
+          rgb(16, 37, 60) 51.2%,
+          rgb(0, 0, 0) 98.6%
+        );
+        color: #fff;
+      }
+      .dark .container {
+        background: rgba(255, 255, 255, 0.1);
+      }
+      .dark a {
+        color: #c415b5;
+      }
+      .dark a:hover {
+        color: #f1e7f1;
+      }
+      .dark button {
+        background: #290426;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="dark-button">Change Theme</button>
+    <div class="container">
+      <h1>My Favourite Hobby</h1>
+      <h2>Baking</h2>
+      <a href="https://en.wikipedia.org/wiki/Baking" target="_blank"
+        ><img
+          class="intro-pics"
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/130/445/original/katie-rosario-QNyRp21hb5I-unsplash.jpg?1719332359"
+          alt="cake"
+      /></a>
+      <div class="grid">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/130/444/original/sara-julie-AL87wdBqPuE-unsplash.jpg?1719332332"
+          alt="cake"
+        />
+        <img
+          class="cake"
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/129/356/original/images.jpg?1718623999"
+          alt="cake"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/130/447/original/deva-williamson-pZZJwwNPy2k-unsplash.jpg?1719332508"
+          alt="cake"
+        />
+        <img
+          class="cookeis"
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/130/448/original/casey-chae-3DrCZblTGoQ-unsplash.jpg?1719332547
+"
+          alt="cookies"
+        />
+      </div>
+      <p>
+        Baking is a method of preparing food that uses dry heat, typically in an
+        oven, but can also be done in hot ashes, or on hot stones. The most
+        common baked item is bread, but many other types of foods can be baked.
+        <em>Heat is gradually transferred</em> "from the surface of cakes,
+        cookies, and pieces of bread to their center, typically conducted at
+        elevated temperatures surpassing 300°F. Dry heat cooking imparts a
+        distinctive richness to foods through the processes of caramelization
+        and surface browning. <br />
+        <a href="https://en.wikipedia.org/wiki/Baking" target="_blank"
+          >📖 Learn on wikipedia</a
+        >
+      </p>
+      <button>Learn to Bake</button>
+    </div>
+    <footer>
+      Coded by
+      <a
+        class="me"
+        href="https://www.shecodes.io/students/1887-immaculater-bayero"
+        target="_blank"
+        >Immaculater Bayero</a
+      >😃
+    </footer>
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+        if (body.classList.contains("dark")) {
+          body.classList.remove("dark");
+        } else {
+          body.classList.add("dark");
+        }
+      }
+      let themeButton = document.querySelector(".dark-button");
+      themeButton.addEventListener("click", changeTheme);
+    </script>
+  </body>
+</html>
